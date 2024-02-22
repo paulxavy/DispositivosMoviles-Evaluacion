@@ -33,7 +33,7 @@ import {OpenAI, } from 'openai'
 import * as path from "path";
 
 const openai = new OpenAI({
-    apiKey: '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', // This is the default and can be omitted
+    apiKey: 'token-censurado', // This is the default and can be omitted
   });
 
 const generatePrompt = (numberToConvert: number) => {

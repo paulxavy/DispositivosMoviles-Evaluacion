@@ -11,7 +11,7 @@ export const process_doc = async (
   const model = new OpenAI({
     modelName: "gpt-3.5-turbo",
     temperature: 0.9,
-    openAIApiKey: "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",
+    openAIApiKey: "token-censurado",
   });
 
   const loader = new PDFLoader(
@@ -25,7 +25,7 @@ export const process_doc = async (
 
   const vectorStore = await MemoryVectorStore.fromDocuments(
     doc,
-    new OpenAIEmbeddings( {openAIApiKey: "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",})
+    new OpenAIEmbeddings( {openAIApiKey: "token-censurado",})
   );
 
 
